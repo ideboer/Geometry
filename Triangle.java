@@ -18,9 +18,9 @@ class Triangle
         // Area = .5 * a * b * sinC
         double angleC;
         double area;
-        double aDist = a.distance();
-        double bDist = b.distance();
-        double cDist = c.distance();
+        double aDist = b.distance(c);
+        double bDist = a.distance(c);
+        double cDist = a.distance(b);
 
         angleC = Math.acos(((cDist * cDist) - (aDist * aDist) - (bDist * bDist)) / ( -2 * aDist * bDist)); // law of cosines
 
