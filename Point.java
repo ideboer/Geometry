@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class Point {
 
     private double x, y;
@@ -28,7 +30,7 @@ public class Point {
 
         double distance;
 
-        distance = Math.sqrt( ( (p.getX - x) * (p.getX - x) ) + ( (p.getY - y) * (p.getY - y) ) );
+        distance = Math.sqrt( ( (p.getX() - x) * (p.getX() - x) ) + ( (p.getY() - y) * (p.getY() - y) ) );
 
         return distance;
     }
