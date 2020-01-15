@@ -1,12 +1,12 @@
 import java.util.*;
 
-class Triange
+class Triangle
 {
     Point a;
     Point b;
     Point c;
 
-    public Trangle(Point a, Point b, Point c)
+    public Triangle(Point a, Point b, Point c)
     {
         this.a = a;
         this.b = b;
