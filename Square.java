@@ -1,18 +1,18 @@
 import java.util.*;
 
 class Square {
-    Point a;
-    Point b;
-    Point c;
-    Point d;
+    Point ll;
+    Point ul;
+    Point lr;
+    Point up;
     double length;
 
-    public Square(Point a, Point b, Point c, Point d) {
-        this.a = a;
-        this.b = b;
-        this.c = c;
-        this.d = d;
-        length = a.distance(b);
+    public Square(Point ll, double length) {
+        this.ll = ll;
+        this.length = length;
+        ul = new Point(a.getX(), a.getY() + length);
+        lr = new Point(a.getX() + length;, a.getY());
+        ul = new Point(a.getX() + length, a.getY() + length);
     }
 
     public double area() {
