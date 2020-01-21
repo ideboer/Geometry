@@ -107,9 +107,8 @@ class Square {
 
 
 
-        double[] bXCords = new double[b.getUL().getX(), b.getUR().getX(), b.getLR().getX(), b.getLL().getX()];
-        double[] bYCords = new double[b.getUL().getY(), b.getUR().getY(), b.getLR().getY(), b.getLL().getY()];
-
+        double[] bXCords = new double[]{b.getUL().getX(), b.getUR().getX(), b.getLR().getX(), b.getLL().getX()};
+        double[] bYCords = new double[]{b.getUL().getY(), b.getUR().getY(), b.getLR().getY(), b.getLL().getY()};
 
         for (int i = 0; i < 4; i++)
         {
@@ -124,8 +123,8 @@ class Square {
 
     public boolean isOverlapping(Square b)
     {
-        double[] bXCords = new double[b.getUL().getX(), b.getUR().getX(), b.getLR().getX(), b.getLL().getX()];
-        double[] bYCords = new double[b.getUL().getY(), b.getUR().getY(), b.getLR().getY(), b.getLL().getY()];
+        double[] bXCords = new double[]{b.getUL().getX(), b.getUR().getX(), b.getLR().getX(), b.getLL().getX()};
+        double[] bYCords = new double[]{b.getUL().getY(), b.getUR().getY(), b.getLR().getY(), b.getLL().getY()};
 
 
         for (int i = 0; i < 4; i++)
